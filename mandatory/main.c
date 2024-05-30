@@ -24,7 +24,7 @@ int	main(void)
 	result[test_printf_s_one_char()]++;
 	result[test_printf_s_tab()]++;
 	result[test_printf_s_empty()]++;
-	result[test_printf_s_null()]++; // undefined behavior
+	// result[test_printf_s_null()]++; // undefined behavior
 	result[test_printf_d_42()]++;
 	result[test_printf_d_minus_42()]++;
 	result[test_printf_d_0()]++;
@@ -80,7 +80,7 @@ int	main(void)
 	result[test_printf_x_upper_42_42_42()]++;
 	result[test_printf_p_42()]++;
 	result[test_printf_p_address()]++;
-	result[test_printf_p_null()]++; // undefined behavior
+	// result[test_printf_p_null()]++; // undefined behavior
 	result[test_printf_multiple()]++;
 	printf("%d cases found\n", result[0] + result[1]);
 	printf("success: %d cases, failure: %d cases\n", result[1], result[0]);
