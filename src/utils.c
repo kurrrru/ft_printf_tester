@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tester.c                                           :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nkawaguc <nkawaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/25 20:35:49 by nkawaguc          #+#    #+#             */
-/*   Updated: 2024/05/25 20:35:49 by nkawaguc         ###   ########.fr       */
+/*   Created: 2024/06/02 13:07:17 by nkawaguc          #+#    #+#             */
+/*   Updated: 2024/06/02 13:07:17 by nkawaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ void	result(const char *test_name, int flag)
 {
 	static int	test_num = 1;
 
-	printf("\x1b[1mtest%3d:\x1b[0m %-40s: ", test_num++, test_name);
+	printf("\x1b[1mtest%4d:\x1b[0m %-40s: ", test_num++, test_name);
 	if (flag == 0)
 		printf("\x1b[31m[NG]\x1b[39m\n");
 	else
 		printf("\x1b[32m[OK]\x1b[39m\n");
 }
 
-int	out_cmp(void)
+int	print_cmp(void)
 {
 	int		fd;
 	char	s1[1001];
