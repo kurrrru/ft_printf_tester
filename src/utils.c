@@ -42,5 +42,5 @@ int	print_cmp(void)
 	read_size = read(fd, s2, 1000);
 	s2[read_size] = '\0';
 	close(fd);
-	return (ft_strncmp(s1, s2, 1000));
+	return (strcmp(s1, s2));
 }

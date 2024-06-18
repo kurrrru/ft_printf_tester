@@ -13,10 +13,20 @@
 #ifndef TESTER_H
 # define TESTER_H
 
-# include "../../ft_printf_bonus.h"
+# ifdef BONUS
+	# include "../../ft_printf_bonus.h"
+# endif
+
+# ifdef MANDATORY
+	# include "../../ft_printf.h"
+# endif
+
 # include <fcntl.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+# include <limits.h>
 
 void	result(const char *test_name, int flag);
 int		print_cmp(void);
