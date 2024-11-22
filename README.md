@@ -1,4 +1,3 @@
-This test was designed for my use, but feel free to test your implementation.
 # Usage
 1. Clone this repository in your ft_printf directory.
 2. Move into ft_printf_tester directory.
