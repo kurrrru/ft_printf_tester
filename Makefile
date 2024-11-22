@@ -31,8 +31,8 @@ clean:
 fclean: clean
 
 norm:
-	norminette -R CheckForbiddenSourceHeader ../*.c ../libft/*.c ../src/*.c ../src_bonus/*.c
-	norminette -R CheckDefine ../*.h ../libft/*.h
+	find ../ -type f -name "*.c" ! -path "../ft_printf_tester/*" -exec norminette -R CheckForbiddenSourceHeader {} +
+	find ../ -type f -name "*.h" ! -path "../ft_printf_tester/*" -exec norminette -R CheckDefine {} +
 
 all: norm mandatory bonus
 
