@@ -14,7 +14,7 @@
 # define TESTER_H
 
 # ifdef BONUS
-#  include "../../ft_printf_bonus.h"
+#  include "../../include/ft_printf_bonus.h"
 # endif
 
 # ifdef MANDATORY
